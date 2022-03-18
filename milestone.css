@@ -346,8 +346,8 @@ h4 {
 
 @media (max-width: 950px) {
   .main_header {
-    font-size: 29px;
-    padding-bottom: 35px;
+    font-size: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -480,7 +480,8 @@ a:hover {
 }
 
 .submit_1 {
-  padding: 10px 5px;
+  padding: 12px;
+  color: white;
   background: #9390ff;
   border: none;
   margin-top: 25px;
