@@ -1,56 +1,58 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Portfolio
 
-> Description the project.
-
+> microverse milestone project
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- html & css
+- stylelint & webhint
+- Github actions
 
-## Live Demo (if available)
+<!-- ## Live Demo (if available) -->
 
-[Live Demo Link](https://livedemo.com)
-
+<!-- [Live Demo Link](https://livedemo.com) -->
 
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
 **Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- node.js & npm
+
 ### Setup
+
+- git clone \<first microverse-milestone-portfolio>
+- cd \<first microverse-milestone-portfolio>
 
 ### Install
 
-### Usage
+- npm install
 
-### Run tests
+<!-- ### Usage -->
 
-### Deployment
+<!-- ### Run tests -->
 
-
+<!-- ### Deployment -->
 
 ## Authors
 
-👤 **Author1**
+👤 **Harold**
+
+- GitHub: [@haroldmud](https://hargithub.com/haroldmud)
+- Twitter: [@mudosaharold](https://twitter.com/MudosaHarold)
+- LinkedIn: [@haroldmudosa](https://www.linkedin.com/in/harold-mudosa-40124021b/)
+
+<!-- 👤 **Author2**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
 
 ## 🤝 Contributing
 
