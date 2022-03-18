@@ -75,7 +75,7 @@ body {
     width: 100%;
     background-image: url(./icon/top-circles.svg);
     background-size: 23rem;
-    background-position-x: 0rem;
+    background-position-x: 0;
     background-position-y: 3rem;
     background-repeat: no-repeat;
   }
