@@ -73,10 +73,10 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-image: url(./icon/circle1.svg);
-    background-size: 35rem;
-    background-position-x: 2rem;
-    background-position-y: 3.5rem;
+    background-image: url(./icon/top-circles.svg);
+    background-size: 23rem;
+    background-position-x: 0rem;
+    background-position-y: 3rem;
     background-repeat: no-repeat;
   }
 }
@@ -98,7 +98,8 @@ ul {
 
 h4 {
   top: 20px;
-  margin-left: 30px;
+  font-weight: bold;
+  margin-left: 50px;
   width: 100%;
   color: aliceblue;
 }
