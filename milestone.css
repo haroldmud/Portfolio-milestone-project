@@ -279,7 +279,7 @@ h4 {
   background-image: url(./icon/Group_65.svg);
   background-size: 105rem;
   background-repeat: no-repeat;
-  width: 59%;
+  width: 70%;
 }
 
 @media (max-width: 950px) {
@@ -425,7 +425,10 @@ a {
 }
 
 .navigation_bar1 {
+  /* position: absolute; */
   display: flex;
+  /* width: 100%; */
+  float: right;
 }
 
 a:hover {
@@ -435,10 +438,9 @@ a:hover {
 .nav_1 {
   text-decoration: none;
   color: white;
-  margin-left: -35px;
   border-right: solid 1px rgba(255, 255, 255, 0.562);
   padding-right: 20px;
-  margin-right: 10px;
+  margin-left: -40px;
 }
 
 .nav_2 {
@@ -447,7 +449,6 @@ a:hover {
   border-right: solid 1px rgba(255, 255, 255, 0.562);
   padding-left: 20px;
   padding-right: 20px;
-  margin-right: 10px;
 }
 
 .nav_3 {
@@ -456,7 +457,6 @@ a:hover {
   border-right: solid 1px rgba(255, 255, 255, 0.562);
   padding-left: 20px;
   padding-right: 20px;
-  margin-right: 10px;
 }
 
 .nav_4 {
