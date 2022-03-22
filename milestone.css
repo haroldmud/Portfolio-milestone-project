@@ -425,10 +425,7 @@ a {
 }
 
 .navigation_bar1 {
-  /* position: absolute; */
   display: flex;
-  /* width: 100%; */
-  float: right;
 }
 
 a:hover {
@@ -511,12 +508,6 @@ a:hover {
   .form_parent {
     width: 100%;
   }
-}
-
-.form_parent {
-  justify-content: center;
-  margin: 0 auto;
-  width: 40%;
 }
 
 @media (max-width: 950px) {
@@ -657,34 +648,44 @@ textarea {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
   }
 }
 
 .mail {
-  margin-left: 0px;
   margin-top: 25px;
 }
 
 @media (max-width: 950px) {
   .mail {
     justify-content: center;
-    margin: 0;
-    margin-left: 11%;
+    margin: 0 auto;
     margin-bottom: 30px;
+    margin-top: -20px;
   }
 }
 
 .footer_links {
-  width: 85%;
-  margin-left: -35px;
+  width: 100%;
+  margin-left: -40px;
+}
+
+@media (max-width: 950px) {
+  .footer_links {
+    width: 60%;
+    margin-left: 10px;
+  }
+
+  .link1 {
+    margin-left: -20px;
+  }
 }
 
 @media (max-width: 950px) {
   .line {
     display: block;
     content: "";
-    width: 50%;
+    width: 60%;
     height: 5px;
     background-color: #030303;
     border-radius: 5px;
@@ -694,7 +695,7 @@ textarea {
 
   .deep_footer {
     width: 70%;
-    margin-left: 17%;
+    margin-left: 20%;
   }
 }
 
