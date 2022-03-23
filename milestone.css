@@ -271,14 +271,15 @@ h4 {
   }
 }
 
+.recent_work {
+  background-image: url(./icon/recent.svg);
+}
+
 .cards_in_grid {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  background-image: url(./icon/Group_65.svg);
-  background-size: 105rem;
-  background-repeat: no-repeat;
   width: 50%;
 }
 
