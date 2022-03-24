@@ -57,6 +57,16 @@ h4 {
   margin-left: 50px;
   width: 100%;
   color: aliceblue;
+  animation: rotation 0.5s infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 .navigation_bar {
@@ -92,10 +102,29 @@ h4 {
 }
 
 .Second_head {
+  position: relative;
   color: aliceblue;
   font-size: 23px;
-  left: 550px;
   margin-top: -35px;
+}
+
+.Second_head:hover {
+  animation: slide 15s;
+}
+
+@keyframes slide {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: 200px;
+  }
+  75% {
+    left: 220px;
+  }
+  100% {
+    left: 250px;
+  }
 }
 
 .introduction {
@@ -195,6 +224,7 @@ h4 {
   font-size: 20px;
   color: #9390ff;
   font-family: sans-serif;
+  animation: slide 0.5s;
 }
 
 .first_grid {
@@ -212,10 +242,13 @@ h4 {
   height: 300px;
   padding-bottom: 50px;
   transition: ease 0.8s;
+  animation-name: Image;
+  animation-duration: 0.5;
+  transition: ease-in-out 0.5;
 }
 
 .card_1:hover {
-  width: 80%;
+  height: 250px;
 }
 
 .grid_child {
@@ -296,6 +329,19 @@ a:hover {
 
 .submit_1:hover {
   background-color: darkviolet;
+  animation: colorado 0.5s;
+}
+
+@keyframes colorado {
+  0% {
+    background-color: darkviolet;
+  }
+  50% {
+    background-color: violet;
+  }
+  100% {
+    background-color: #7d73fc;
+  }
 }
 
 .form_parent {
