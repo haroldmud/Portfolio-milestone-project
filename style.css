@@ -335,14 +335,13 @@ a:hover {
 }
 
 @keyframes colorado {
-  
-  0% { 
+  0% {
     background-color: darkviolet;
   }
 
   50% {
     background-color: violet;
-     }
+  }
 
   100% {
     background-color: #7d73fc;

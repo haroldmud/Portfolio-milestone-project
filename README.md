@@ -12,7 +12,7 @@
 
 <!-- ## Live Demo (if available) -->
 
-<!-- [Live Demo Link](https://livedemo.com) -->
+[Live Demo](https://haroldmud.github.io/Microverse-milestone-project/index.html)
 
 ## Getting Started
 
