@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/136dc91701.js" crossorigin="anonymous"></script>
     <title>milestone-project</title>
 </head>
 <body>
@@ -12,9 +13,9 @@
           <div class="head_center"> 
              <header>
                <h4>
-                 <a class="link" href="">John Doe</a>
+                 <a id="logo"  href="">John Doe</a>
               </h4>
-               <nav class="navigation_bar">
+               <nav class="navigation_bar" id="navigation_bar">
                  <ul>
                     <li><a class="link" href="">Portfolio</a></li>
                     <li><a class="link" href="">About</a></li>
@@ -23,14 +24,27 @@
                       <a class="link" href="">
                         <img class="email_icon" src="./icon/Union.svg" alt="" />
                       </a>
+                      <a id="mail-link" class="link" href="">E-mail</a>
                     </li>
                   </ul>
                 </nav>
-               <button type="button" class="link_menu">
-                 <span></span>
-                 <span></span>
-                 <span></span>
+               <button type="button" class="link_menu" id="link_menu">
+                <i id="menu-icon" class="fa-solid fa-bars" onclick="changeIcon(this)"></i>
                </button>
+               <nav class="nav_bar" id="nav_bar" >
+                <ul class="links">
+                   <li class="lists">
+                     <a class="link" href="">Portfolio</a>
+                     <i class="fa-solid fa-chevron-right" id="chevron-right"></i>
+                    </li>
+                   <li class="lists">
+                     <a class="link" id="about" href="">About</a>
+                     <i class="fa-solid fa-chevron-right" id="chevron-right"></i></li>
+                   <li class="lists">
+                     <a class="link" href="">Contact</a>
+                     <i class="fa-solid fa-chevron-right" id="chevron-right"></i></li>
+                 </ul>
+               </nav>
              </header>
              <main class="website_body">
                <h1 class="first_head">Laura Jong</h1>
@@ -257,6 +271,7 @@
               <div class="line"></div>
             </div>
           </footer>
+          <script src="./script.js"></script>
        </body>
      </html>
      
