@@ -129,3 +129,22 @@ const projectsGenerator = projectsCards.map((card, index) => `
 `).join('');
 
 CardsContainer.innerHTML += projectsGenerator;
+
+function validation() {
+  const form = document.getElementById('form');
+  const email = document.getElementById('email');
+  const text = document.getElementById('text');
+  const errorMessage = document.getElementById('error-text');
+
+  if (email.value !== email.value.toLowerCase()) {
+    errorMessage.textContent = 'Please,use lowercase letters';
+    errorMessage.style.color = 'orange';
+    return false;
+  }
+  errorMessage.textContent = 'Correct email';
+  errorMessage.style.color = 'green';
+  setTimeout(() => {
+    errorMessage.textContent = 'well done';
+  }, 3000);
+  return true;
+}
