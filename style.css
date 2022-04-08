@@ -144,7 +144,7 @@ h4 {
   color: aliceblue;
   font-size: small;
   padding-top: 20px;
-  padding-left: 75px;
+  padding-left: 25px;
   padding-right: 0;
   height: 200px;
   width: 400px;
@@ -204,8 +204,9 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-items: center;
   margin: 0 auto;
-  width: 50%;
+  width: 80%;
 }
 
 .work_section {
@@ -234,6 +235,14 @@ h4 {
   padding-top: 50px;
 }
 
+.first_grid .card1 {
+  order: 1 !important;
+}
+
+.first_grid .grid_child {
+  order: 2 !important;
+}
+
 .second_grid {
   display: flex;
   padding-top: 50px;
@@ -249,12 +258,6 @@ h4 {
 
 .card_1:hover {
   height: 250px;
-}
-
-.grid_child {
-  padding-bottom: 50px;
-  padding-right: 20px;
-  width: 400px;
 }
 
 .title_1 {
@@ -315,7 +318,7 @@ a:hover {
 }
 
 .submit_1 {
-  width: 90px;
+  width: 95px;
   padding: 12px;
   color: white;
   background: #9390ff;
@@ -462,7 +465,7 @@ textarea {
 }
 
 .mail {
-  margin-top: 13px;
+  margin-top: 25px;
   margin-left: -60%;
 }
 
@@ -485,6 +488,7 @@ button:hover {
 
 .popup_window {
   display: none;
+  margin: 0 auto 0 15%;
   background-image: url(./icon/circle1.svg);
   background-size: 55rem;
   background-repeat: no-repeat;
@@ -493,6 +497,24 @@ button:hover {
   background-color: #191765;
   border: transparent solid 1px;
   width: 70%;
+  position: fixed;
+  height: 600px;
+  overflow-y: scroll;
+  top: 10px;
+  z-index: 10;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(143, 143, 199);
+  border-radius: 2px;
 }
 
 .popup_window.active {
@@ -626,14 +648,16 @@ button:hover {
 
 @media (max-width: 950px) {
   .popup_window {
-    position: absolute;
+    position: fixed;
     display: none;
     background-image: url(./icon/shape-mobile-menu.svg);
     background-size: 10rem;
     background-repeat: no-repeat;
     background-color: #191765;
     right: 0;
+    top: 0;
     width: 100%;
+    overflow-y: scroll;
   }
 
   .Navlisted {
