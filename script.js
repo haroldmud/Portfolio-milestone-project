@@ -106,8 +106,57 @@ const projectsCards = [
   },
 ];
 
-const projectsGenerator = projectsCards.map((card, index) => `
-<div class="${card.position ? 'first_grid' : 'second_grid'}">
+// getting form///////////////////////////////////////////////////////////////////
+
+function getForm() {
+  if (localStorage.length !== 0) {
+    const valuesStored = JSON.parse(
+      localStorage.getItem('formValues'),
+    );
+    console.log(valuesStored);
+    document.getElementById('name').value = valuesStored.name;
+    document.getElementById('last-name').value = valuesStored.lastName;
+    document.querySelector('#email').value = valuesStored.email;
+    document.getElementById('feedback').value = valuesStored.message;
+  } else {
+    console.log('no item fund!');
+  }
+}
+
+function StoreIn() {
+  const valEmail = document.getElementById('email').value;
+  const valName = document.getElementById('name').value;
+  const valText = document.getElementById('feedback').value;
+  const valLastName = document.getElementById('last-name').value;
+
+  const formStore = {
+    name: '',
+    lastName: '',
+    email: '',
+    message: '',
+  };
+
+  formStore.name = valName;
+  formStore.lastName = valLastName;
+  formStore.email = valEmail;
+  formStore.message = valText;
+
+  localStorage.setItem('formValues', JSON.stringify(formStore));
+}
+getForm();
+
+const nameZ = document.getElementById('name');
+const lastNameZ = document.getElementById('last-name');
+const emailWZ = document.querySelector('#email');
+const feedbackZ = document.getElementById('feedback');
+nameZ.addEventListener('input', StoreIn);
+lastNameZ.addEventListener('input', StoreIn);
+emailWZ.addEventListener('input', StoreIn);
+feedbackZ.addEventListener('input', StoreIn);
+
+// getting form//////////////////////////////////////////////////////////////////
+
+const projectsGenerator = projectsCards.map((card, index) => ` <div class="${card.position ? 'first_grid' : 'second_grid'}">
 <div class="grid_child">
   <h2 class="title_1">${card.title}</h2>
   <p>${card.cardText}</p>
@@ -135,6 +184,7 @@ function validation() {
   const email = document.getElementById('email');
   const text = document.getElementById('text');
   const errorMessage = document.getElementById('error-text');
+  const valEmail = email.value;
 
   if (email.value !== email.value.toLowerCase()) {
     errorMessage.textContent = 'Please,use lowercase letters';
@@ -143,6 +193,8 @@ function validation() {
   }
   errorMessage.textContent = 'Correct email';
   errorMessage.style.color = 'green';
+  StoreIn();
+
   setTimeout(() => {
     errorMessage.textContent = 'well done';
   }, 3000);
