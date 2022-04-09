@@ -123,7 +123,41 @@ function getForm() {
   }
 }
 
+function StoreIn () {
+  const valEmail = document.getElementById('email').value;
+  const valName = document.getElementById('name').value;
+  const valText = document.getElementById('feedback').value;
+  const valLastName = document.getElementById('last-name').value;
+
+  const formStore = {
+    name: '',
+    lastName: '',
+    email: '',
+    message: '',
+  };
+
+  formStore.name = valName;
+formStore.lastName = valLastName;
+formStore.email = valEmail;
+formStore.message = valText;
+
+localStorage.setItem('formValues', JSON.stringify(formStore));
+console.log(JSON.stringify(formStore));
+
+}
 getForm();
+
+const nameZ = document.getElementById('name');
+const lastNameZ = document.getElementById('last-name');
+const emailWZ =  document.querySelector('#email');
+const feedbackZ = document.getElementById('feedback');
+
+nameZ.addEventListener('input', StoreIn);
+lastNameZ.addEventListener('input', StoreIn);
+emailWZ.addEventListener('input', StoreIn);
+feedbackZ.addEventListener('input', StoreIn);
+
+
 
 // getting form//////////////////////////////////////////////////////////////////
 
@@ -157,16 +191,7 @@ function validation() {
   const text = document.getElementById('text');
   const errorMessage = document.getElementById('error-text');
   const valEmail = email.value;
-  const valName = document.getElementById('name').value;
-  const valText = document.getElementById('feedback').value;
-  const valLastName = document.getElementById('last-name').value;
-
-  const formStore = {
-    name: '',
-    lastName: '',
-    email: '',
-    message: '',
-  };
+ 
 
   if (email.value !== email.value.toLowerCase()) {
     errorMessage.textContent = 'Please,use lowercase letters';
@@ -175,14 +200,7 @@ function validation() {
   }
   errorMessage.textContent = 'Correct email';
   errorMessage.style.color = 'green';
-
-  formStore.name = valName;
-  formStore.lastName = valLastName;
-  formStore.email = valEmail;
-  formStore.message = valText;
-
-  localStorage.setItem('formValues', JSON.stringify(formStore));
-  console.log(JSON.stringify(formStore));
+  StoreIn();
 
   setTimeout(() => {
     errorMessage.textContent = 'well done';
