@@ -123,7 +123,7 @@ function getForm() {
   }
 }
 
-function StoreIn () {
+function StoreIn() {
   const valEmail = document.getElementById('email').value;
   const valName = document.getElementById('name').value;
   const valText = document.getElementById('feedback').value;
@@ -136,13 +136,13 @@ function StoreIn () {
     message: '',
   };
 
-    formStore.name = valName;
-    formStore.lastName = valLastName;
-    formStore.email = valEmail;
-    formStore.message = valText;
+  formStore.name = valName;
+  formStore.lastName = valLastName;
+  formStore.email = valEmail;
+  formStore.message = valText;
 
-    localStorage.setItem('formValues', JSON.stringify(formStore));
-  }
+  localStorage.setItem('formValues', JSON.stringify(formStore));
+}
 getForm();
 
 const nameZ = document.getElementById('name');
@@ -156,8 +156,7 @@ feedbackZ.addEventListener('input', StoreIn);
 
 // getting form//////////////////////////////////////////////////////////////////
 
-const projectsGenerator = projectsCards.map((card, index) =>
-` <div class="${card.position ? 'first_grid' : 'second_grid'}">
+const projectsGenerator = projectsCards.map((card, index) => ` <div class="${card.position ? 'first_grid' : 'second_grid'}">
 <div class="grid_child">
   <h2 class="title_1">${card.title}</h2>
   <p>${card.cardText}</p>
