@@ -8,8 +8,8 @@
     <script src="https://kit.fontawesome.com/136dc91701.js" crossorigin="anonymous"></script>
     <title>milestone-project</title>
 </head>
-<body>
-        <div class="header_div">
+<body id="body_container">
+        <div class="header_div" id="header_div">
           <div class="head_center"> 
              <header>
                <h4>
@@ -128,93 +128,12 @@
              </div>
           </div>
         </div> 
+         <section id="popup" class="popup_window"> </section> 
     <section class="recent_work">
         <section >
           <h2 class="main_header" id="recent">MY RECENT WORK</h2>
-          <div class="cards_in_grid">
-            <div class="first_grid">
-              <div><img class="card_1" src="./icon/Placeholder.jpg" alt="" /></div>
-              <div class="grid_child">
-                <h2 class="title_1">Multi-post story</h2>
-                <p>
-                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a standard dummy text.
-                </p>
-        
-                <nav class="navigation_bar1">
-                  <ul>
-                    <li class="nav_1"><a href="">Css</a></li>
-                    <li class="nav_2"><a href="">Html</a></li>
-                    <li class="nav_3"><a href="">Bootstrap</a></li>
-                    <li class="nav_4"><a href="">Ruby</a></li>
-                  </ul>
-                </nav>
-                <button type="button" class="submit_1">See Project</button>
-              </div>
-           </div>
-        
-              <div class="second_grid">
-                <div class="grid_child">
-                  <h2 class="title_1">Multi-post story</h2>
-                  <p>
-                    A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy
-                    text ever since the 1500s, when an unknown printer took a standard dummy text.
-                  </p>
-        
-                  <nav class="navigation_bar1">
-                    <ul>
-                      <li class="nav_1"><a href="">Css</a></li>
-                      <li class="nav_2"><a href="">Html</a></li>
-                      <li class="nav_3"><a href="">Bootstrap</a></li>
-                      <li class="nav_4"><a href="">Ruby</a></li>
-                    </ul>
-                  </nav>
-                  <button type="button" class="submit_1">See Project</button>
-                </div>
-                <div><img class="card_1" src="./icon/Placeholder.jpg" alt="" /></div>
-              </div>  
-      
-              <div class="first_grid">
-                <div><img class="card_1" src="./icon/Placeholder.jpg" alt="" /></div>
-                <div class="grid_child">
-                  <h2 class="title_1">Multi-post story</h2>
-                  <p>
-                    A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy
-                    text ever since the 1500s, when an unknown printers took a standard dummy text.
-                  </p>
-          
-                  <nav class="navigation_bar1">
-                    <ul>
-                      <li class="nav_1"><a href="">Css</a></li>
-                      <li class="nav_2"><a href="">Html</a></li>
-                      <li class="nav_3"><a href="">Bootstrap</a></li>
-                      <li class="nav_4"><a href="">Ruby</a></li>
-                    </ul>
-                  </nav>
-          
-                  <button type="button" class="submit_1">See Project</button>
-                </div>
-             </div>
-             <div class="second_grid">
-              <div class="grid_child">
-                <h2 class="title_1">Multi-post story</h2>
-                <p>
-                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a standard dummy text.
-                </p>
-      
-                <nav class="navigation_bar1">
-                  <ul>
-                    <li class="nav_1"><a href="">Css</a></li>
-                    <li class="nav_2"><a href="">Html</a></li>
-                    <li class="nav_3"><a href="">Bootstrap</a></li>
-                    <li class="nav_4"><a href="">Ruby</a></li>
-                  </ul>
-                </nav>
-                <button type="button" class="submit_1">See Project</button>
-              </div>
-              <div><img class="card_1" src="./icon/Placeholder.jpg" alt="" /></div>
-            </div>
+          <div class="cards_in_grid" id="CardsContainer">
+            
           </div>
         </section>
         <section class="form_parent">
@@ -226,16 +145,17 @@
               to help with it.
             </p>
           </div>
-          <div class="form">
+          <div class="form" id="form">
             <form class="contact-form" action="https://formspree.io/f/xnqwzyng" method="POST">
               <div class="input-div">
                 <input class="name_input1" type="text" name="name" id="name" placeholder="name" maxlength="30" required />
-                <input class="name_input2" type="text" name="name" id="last-name" placeholder="last-name" maxlength="30" required>
+                <input class="name_input2" type="text"  name="lastName" id="last-name" placeholder="last-name" maxlength="30" required>
               </div>
-              <input class="input-mail" type="email" name="email" id="email" placeholder="Enter your e-mail" required />
+              <input class="input-mail" type="email"  name="email" id="email" placeholder="Enter your e-mail" required/>
               <textarea id="feedback" class="textarea" maxlength="500" required placeholder="Enter text here..."></textarea>
               <button type="submit" class="button-sub">SEE PROJECT</button>
-              <button type="submit" class="button_sub">SEND</button>
+              <button type="submit" class="button_sub" onclick="return validation()">SEND</button>
+              <span id="error-text" ></span>
             </form>
           </div>
         </section>
