@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="milestone.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/136dc91701.js" crossorigin="anonymous"></script>
     <title>milestone-project</title>
 </head>
-<body>
-        <div class="header_div">
+<body id="body_container">
+        <div class="header_div" id="header_div">
           <div class="head_center"> 
              <header>
                <h4>
-                 <a class="link" href="">John Doe</a>
+                 <a id="logo"  href="">John Doe</a>
               </h4>
-               <nav class="navigation_bar">
+               <nav class="navigation_bar" id="navigation_bar">
                  <ul>
                     <li><a class="link" href="">Portfolio</a></li>
                     <li><a class="link" href="">About</a></li>
@@ -23,16 +24,29 @@
                       <a class="link" href="">
                         <img class="email_icon" src="./icon/Union.svg" alt="" />
                       </a>
+                      <a id="mail-link" class="link" href="">E-mail</a>
                     </li>
                   </ul>
                 </nav>
-               <button type="button" class="link_menu">
-                 <span></span>
-                 <span></span>
-                 <span></span>
+               <button type="button" class="link_menu" id="link_menu">
+                <i id="menu-icon" class="fa-solid fa-bars" onclick="changeIcon(this)"></i>
                </button>
+               <nav class="nav_bar" id="nav_bar" >
+                <ul class="links">
+                   <li class="lists">
+                     <a class="link" id="portfolio" href="#website" onclick="fun()">Portfolio</a>
+                     <i class="fa-solid fa-chevron-right" id="chevron-rig"></i>
+                    </li>
+                   <li class="lists">
+                     <a class="link" id="about" href="#recent">About</a>
+                     <i class="fa-solid fa-chevron-right" id="chevron-righ"></i></li>
+                   <li class="lists">
+                     <a class="link" href="#contact_us">Contact</a>
+                     <i class="fa-solid fa-chevron-right" id="chevron-right"></i></li>
+                 </ul>
+               </nav>
              </header>
-             <main class="website_body">
+             <main class="website_body" id="website">
                <h1 class="first_head">Laura Jong</h1>
                <h2 class="Second_head">Software Developer</h2>
                <p class="introduction">
@@ -43,7 +57,7 @@
                <div class="table">
                  <div>
                    <ul class="column">
-                     <li class="table_head">Language</li>
+                     <li class="table_head">Languages</li>
                      <li>Javascript</li>
                      <li>Ruby</li>
                      <li>Html</li>
@@ -114,113 +128,39 @@
              </div>
           </div>
         </div> 
-        <section>
-          <h2 class="main_header">MY RECENT WORK</h2>
-          <div class="cards_in_grid">
-            <div class="first_grid">
-              <div><img class="card_1" src="./icon/Placeholder.jpg" alt="" /></div>
-              <div class="grid_child">
-                <h2 class="title_1">Multi-post story</h2>
-                <p>
-                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a standard dummy text.
-                </p>
-        
-                <nav class="navigation_bar1">
-                  <ul>
-                    <li class="nav_1"><a href="">css</a></li>
-                    <li class="nav_2"><a href="">html</a></li>
-                    <li class="nav_3"><a href="">bootstrap</a></li>
-                    <li class="nav_4"><a href="">ruby</a></li>
-                  </ul>
-                </nav>
-                <button type="button" class="submit_1">See Project</button>
-              </div>
-           </div>
-        
-              <div class="second_grid">
-                <div class="grid_child">
-                  <h2 class="title_1">Multi-post story</h2>
-                  <p>
-                    A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy
-                    text ever since the 1500s, when an unknown printer took a standard dummy text.
-                  </p>
-        
-                  <nav class="navigation_bar1">
-                    <ul>
-                      <li class="nav_1"><a href="">css</a></li>
-                      <li class="nav_2"><a href="">html</a></li>
-                      <li class="nav_3"><a href="">bootstrap</a></li>
-                      <li class="nav_4"><a href="">ruby</a></li>
-                    </ul>
-                  </nav>
-                  <button type="button" class="submit_1">See Project</button>
-                </div>
-                <div><img class="card_1" src="./icon/Placeholder.jpg" alt="" /></div>
-              </div>  
-      
-              <div class="first_grid">
-                <div><img class="card_1" src="./icon/Placeholder.jpg" alt="" /></div>
-                <div class="grid_child">
-                  <h2 class="title_1">Multi-post story</h2>
-                  <p>
-                    A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy
-                    text ever since the 1500s, when an unknown printer took a standard dummy text.
-                  </p>
-          
-                  <nav class="navigation_bar1">
-                    <ul>
-                      <li class="nav_1"><a href="">css</a></li>
-                      <li class="nav_2"><a href="">html</a></li>
-                      <li class="nav_3"><a href="">bootstrap</a></li>
-                      <li class="nav_4"><a href="">ruby</a></li>
-                    </ul>
-                  </nav>
-          
-                  <button type="button" class="submit_1">See Project</button>
-                </div>
-             </div>
-             <div class="second_grid">
-              <div class="grid_child">
-                <h2 class="title_1">Multi-post story</h2>
-                <p>
-                  A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a standard dummy text.
-                </p>
-      
-                <nav class="navigation_bar1">
-                  <ul>
-                    <li class="nav_1"><a href="">css</a></li>
-                    <li class="nav_2"><a href="">html</a></li>
-                    <li class="nav_3"><a href="">bootstrap</a></li>
-                    <li class="nav_4"><a href="">ruby</a></li>
-                  </ul>
-                </nav>
-                <button type="button" class="submit_1">See Project</button>
-              </div>
-              <div><img class="card_1" src="./icon/Placeholder.jpg" alt="" /></div>
-            </div>
+         <section id="popup" class="popup_window"> </section> 
+    <section class="recent_work">
+        <section >
+          <h2 class="main_header" id="recent">MY RECENT WORK</h2>
+          <div class="cards_in_grid" id="CardsContainer">
+            
           </div>
         </section>
         <section class="form_parent">
           <div class="contact_intro">
-            <h3 class="mobile">CONTACT US</h3>
+            <h3 class="mobile" id="contact_us">CONTACT US</h3>
             <p class="text">
               If you have an application you are interested in developing, a
               feature that you need built or a project that needs coding. I’d love
               to help with it.
             </p>
           </div>
-          <div class="form">
+          <div class="form" id="form">
             <form class="contact-form" action="https://formspree.io/f/xnqwzyng" method="POST">
-              <input type="text" name="name" id="name" placeholder="Text Input" maxlength="30" required />
-              <input class="input-mail" type="email" name="email" id="email" placeholder="Enter your e-mail" required />
+              <div class="input-div">
+                <input class="name_input1" type="text" name="name" id="name" placeholder="name" maxlength="30" required />
+                <input class="name_input2" type="text"  name="lastName" id="last-name" placeholder="last-name" maxlength="30" required>
+              </div>
+              <input class="input-mail" type="email"  name="email" id="email" placeholder="Enter your e-mail" required/>
               <textarea id="feedback" class="textarea" maxlength="500" required placeholder="Enter text here..."></textarea>
               <button type="submit" class="button-sub">SEE PROJECT</button>
+              <button type="submit" class="button_sub" onclick="return validation()">SEND</button>
+              <span id="error-text" ></span>
             </form>
           </div>
         </section>
-          <div class="cross"></div>
+    </section>
+       <div class="cross"></div>
           <footer>
             <div class="deep_footer">
               <div class="bottom_footer">
@@ -251,6 +191,7 @@
               <div class="line"></div>
             </div>
           </footer>
+          <script src="./script.js"></script>
        </body>
      </html>
      
