@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> microverse milestone project
+> This is my personnal portfolio, feel free to check it out.
 
 ## Built With
 
