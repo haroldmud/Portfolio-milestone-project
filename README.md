@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> This is my personnal portfolio, feel free to check it out.
+> This is my personnal portfolio, built with HTML,CSS and some javascript, feel free to check it out.
 
 ## Built With
 
