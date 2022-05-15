@@ -7,7 +7,7 @@
 ## Built With
 
 - Html & css
-- stylelint & webhint
+- Stylelint & webhint
 - Github actions
 
 <!-- ## Live Demo (if available) -->
