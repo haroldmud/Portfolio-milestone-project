@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Portfolio
 
 > This is my personnal portfolio, built with HTML,CSS and some javascript, feel free to check it out.
