@@ -6,7 +6,7 @@
 
 ## Built With
 
-- html & css
+- html & css & js
 - stylelint & webhint
 - Github actions
 
